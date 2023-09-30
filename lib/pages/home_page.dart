@@ -13,6 +13,8 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class HomePage extends StatelessWidget {
+  const HomePage({super.key});
+
   @override
   Widget build(BuildContext context) {
     var spaceProvider = Provider.of<SpaceProvider>(context);
@@ -124,7 +126,7 @@ class HomePage extends StatelessWidget {
                 style: blackTextStyle.copyWith(fontSize: 16),
               ),
             ),
-            SizedBox(height: 16),
+            const SizedBox(height: 16),
             Padding(
               padding: EdgeInsets.symmetric(
                 horizontal: edge,
@@ -152,7 +154,7 @@ class HomePage extends StatelessWidget {
                       }).toList(),
                     );
                   }
-                  return Text('tidak ada data');
+                  return const Text('tidak ada data');
                 }),
               ),
             ),
@@ -207,7 +209,7 @@ class HomePage extends StatelessWidget {
           color: const Color(0xffF6F7F8),
           borderRadius: BorderRadius.circular(23),
         ),
-        child: Row(
+        child: const Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             BottomNavbarItem(

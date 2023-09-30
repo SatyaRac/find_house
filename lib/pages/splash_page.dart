@@ -16,7 +16,7 @@ class SplashPage extends StatelessWidget {
                 alignment: Alignment.bottomCenter,
                 child: Image.asset('assets/bottom.png')),
             Padding(
-              padding: EdgeInsets.only(top: 50, left: 30),
+              padding: const EdgeInsets.only(top: 50, left: 30),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -34,14 +34,14 @@ class SplashPage extends StatelessWidget {
                       style: blackTextStyle.copyWith(
                         fontSize: 24,
                       )),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   Text(
                     'Stop membuang banyak waktu\npada tempat yang tidak habitable',
                     style: greyTextStyle.copyWith(fontSize: 16),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 40,
                   ),
                   Container(
@@ -55,7 +55,7 @@ class SplashPage extends StatelessWidget {
                       onPressed: () {
                         Navigator.of(context)
                             .push(MaterialPageRoute(builder: (context) {
-                          return HomePage();
+                          return const HomePage();
                         }));
                       },
                       child: Text(

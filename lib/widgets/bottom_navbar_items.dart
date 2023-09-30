@@ -5,7 +5,7 @@ class BottomNavbarItem extends StatelessWidget {
   final String imageUrl;
   final bool isActive;
 
-  BottomNavbarItem({
+  const BottomNavbarItem({
     Key? key,
     required this.imageUrl,
     required this.isActive,
@@ -15,19 +15,19 @@ class BottomNavbarItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Spacer(),
+        const Spacer(),
         Image.asset(
           imageUrl,
           width: 26,
         ),
-        Spacer(),
+        const Spacer(),
         isActive
             ? Container(
                 width: 30,
                 height: 2,
                 decoration: BoxDecoration(
                     color: purpleColor,
-                    borderRadius: BorderRadius.vertical(
+                    borderRadius: const BorderRadius.vertical(
                       top: Radius.circular(1000),
                     )),
               )

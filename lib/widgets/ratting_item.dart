@@ -4,7 +4,7 @@ class RattingItem extends StatelessWidget {
   final int index;
   final int ratting;
 
-  RattingItem({required this.index, required this.ratting});
+  const RattingItem({super.key, required this.index, required this.ratting});
 
   @override
   Widget build(BuildContext context) {

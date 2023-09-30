@@ -3,10 +3,13 @@ import 'package:find_house/theme.dart';
 import 'package:flutter/material.dart';
 
 class ErrorPage extends StatelessWidget {
+  const ErrorPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
+        bottom: false,
         child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -15,14 +18,14 @@ class ErrorPage extends StatelessWidget {
                 'assets/error.png',
                 width: 300,
               ),
-              SizedBox(
+              const SizedBox(
                 height: 70,
               ),
               Text(
                 'Where are you going?',
                 style: blackTextStyle.copyWith(fontSize: 24),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 14,
               ),
               Text(
@@ -30,7 +33,7 @@ class ErrorPage extends StatelessWidget {
                 style: greyTextStyle.copyWith(fontSize: 16),
                 textAlign: TextAlign.center,
               ),
-              SizedBox(
+              const SizedBox(
                 height: 50,
               ),
               Container(
@@ -55,7 +58,6 @@ class ErrorPage extends StatelessWidget {
             ],
           ),
         ),
-        bottom: false,
       ),
     );
   }

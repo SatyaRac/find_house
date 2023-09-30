@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return ChangeNotifierProvider.value(
       value: SpaceProvider(),
-      child: MaterialApp(
+      child: const MaterialApp(
         home: SplashPage(),
       ),
     );

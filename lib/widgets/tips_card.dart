@@ -5,7 +5,7 @@ import '../models/tips.dart';
 class TipsCard extends StatelessWidget {
   final Tips tips;
 
-  TipsCard(this.tips);
+  const TipsCard(this.tips, {super.key});
 
   @override
   Widget build(BuildContext context) {

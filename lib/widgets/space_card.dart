@@ -6,7 +6,7 @@ import '../theme.dart';
 
 class SpaceCard extends StatelessWidget {
   final Space space;
-  SpaceCard(this.space);
+  const SpaceCard(this.space, {super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -42,7 +42,7 @@ class SpaceCard extends StatelessWidget {
                       height: 30,
                       decoration: BoxDecoration(
                           color: purpleColor,
-                          borderRadius: BorderRadius.only(
+                          borderRadius: const BorderRadius.only(
                               bottomLeft: Radius.circular(36))),
                       child: Center(
                           child: Row(
@@ -65,7 +65,7 @@ class SpaceCard extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             width: 20,
           ),
           Column(
@@ -77,7 +77,7 @@ class SpaceCard extends StatelessWidget {
                   fontSize: 18,
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 2,
               ),
               Text.rich(
@@ -95,7 +95,7 @@ class SpaceCard extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 16,
               ),
               Text('${space.city}, ${space.country}', style: greyTextStyle)

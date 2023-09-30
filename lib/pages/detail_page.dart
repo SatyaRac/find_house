@@ -30,7 +30,7 @@ class _DetailPageState extends State<DetailPage> {
         Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => ErrorPage(),
+              builder: (context) => const ErrorPage(),
             ));
       }
     }
@@ -139,7 +139,7 @@ class _DetailPageState extends State<DetailPage> {
                             Row(
                               children: [1, 2, 3, 4, 5].map((index) {
                                 return Container(
-                                  margin: EdgeInsets.only(left: 2),
+                                  margin: const EdgeInsets.only(left: 2),
                                   child: RattingItem(
                                       index: index,
                                       ratting: widget.space.rating),
